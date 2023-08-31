@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: #18161F ;
+    height: 500px;
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+
+#blur{
+    display: flex;
+    position: absolute;
+    z-index: -5;
+    height: 610px;
+    width: 1300px;
+    
+    
+}
+
+
+#logo{
+    margin-left: 40px;
+}
+
+nav{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+    margin: 30px 20px 0px 20px ;
+
+}
+
+nav img{
+    margin-right: 25px;
+}
+
+#avatar{
+    display: flex;
+    align-items: center;
+    margin-left: 650px;
+    
+}
+
+#insc{
+    border: solid white thin;
+    border-radius: 40px;
+    padding: 15px;
+    font-weight: 600;
+    margin-left: 90px;
+    
+}
+
+.conteudo{
+    display: flex;
+    margin: 50px 0px 0px 60px;
+    
+}
+
+#imgBruno{
+    display: flex;
+    margin: 20px 10px 0px 200px;
+}
+
+
+#container{
+    display: flex;
+    color: white;
+    
+
+}
+
+#text1{
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 30px;
+
+}
+
+#text2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#text3{
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+#vaga{
+    border: solid #00D9C0 thin;
+    background: #00D9C0;
+    border-radius: 30px;
+    padding: 15px;
+    width: 215px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+
+}

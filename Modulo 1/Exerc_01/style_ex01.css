@@ -1,0 +1,35 @@
+body{
+    background-color: #01010f;
+    
+}
+
+h1{
+    color: #00cecb;
+}
+
+p{
+    color: white;
+}
+
+ul{
+    background-color: #030318;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 30px;
+}
+
+a{
+    color: #A16B9F;
+    text-decoration: none;
+}
+
+#img{
+    border-color: #00cecb;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+
+}

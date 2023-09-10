@@ -1,0 +1,53 @@
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+
+body{
+    background: #D6D4E2;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    
+    
+}
+
+#card{
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 163px;
+    border-radius: 30px;
+    
+}
+
+#logo{
+    padding: 18px;
+    transition: filter 0.1s ease-in-out;
+}
+
+.container:hover #logo {
+    filter: brightness(0) invert(1);
+}
+
+p{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#card:hover {
+    background-color: #18161F;
+    color: #FFFFFF;
+    
+}
+
+
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style_lista.css"/>
+    
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="addTask" class="addTask">
+            <img src="./assets-zip/task.svg" />
+            Adicionar uma tarefa
+        </div>
+        <div id="inputBt">
+            <input name="inputTask" id="inputTask" type="text" placeholder="Descreva a tarefa">
+            <button id="buttonTask">Criar Tarefa</button>
+        </div>
+    </div>
+
+        <div id="taskFrame">
+            <img src="./assets-zip/board.svg" />
+            Quadro de Tarefas
+        </div>
+    
+    <div id="frame">
+
+    </div>
+
+    <script>
+        const container = document.getElementById('container')
+        const buttonTask = document.getElementById('buttonTask')
+        const frame = document.getElementById('frame')
+        let resultElement = document.createElement('div')
+        const paragrafo = document.createElement('p')
+        const inputCheck = document.createElement('input')
+        inputCheck.setAttribute("type", "checkbox")
+        const deleteTask = document.createElement('button')
+        deleteTask.innerHTML = '<img src="./assets-zip/remove.svg" />'
+        resultElement.appendChild(deleteTask)
+        
+        
+        
+
+
+        resultElement.style.cssText = 
+            'display: flex;'+
+            'align-items: center;' +
+            'background-color: white;' +
+            'padding: 22px;' + 
+            'border-radius: 15px;'+
+            'width: 400px;' + 
+            'margin: 20px 10px 10px 52px;' +
+            'border: solid white;' +
+            'font-weight: 600;'
+         
+        inputCheck.style.cssText = 
+            'height: 15px;' + 
+            'width: 15px;' +
+            'margin-right: 10px;'
+            
+        deleteTask.style.cssText = 
+            'margin-left: 380px;' +
+            'background-color: white;' +
+            'border: solid white;' +
+            'cursor: pointer;' +
+            'position: fixed;'
+            
+        
+        
+        buttonTask.addEventListener('click', () => {
+            
+            const task = document.getElementById('inputTask').value
+            frame.appendChild(resultElement)
+            resultElement.appendChild(inputCheck)
+            paragrafo.innerText = task
+            resultElement.appendChild(paragrafo)
+            
+            
+        })
+        
+        
+
+        inputCheck.onclick = function(){
+            
+            if(inputCheck.checked === true){
+            resultElement.style.border = 'solid green'
+            paragrafo.style.color = 'green'
+            paragrafo.style.textDecoration = 'line-through'
+            }else{
+                resultElement.style.border = 'solid white'
+                paragrafo.style.color = 'black'
+                paragrafo.style.textDecoration = 'none'
+            }  
+            
+        }
+
+        deleteTask.onclick = function(){
+           
+            console.log('funciona')
+            
+
+        }
+
+       
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
